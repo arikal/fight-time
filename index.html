@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Fight time</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.12/angular.min.js"></script>
+</head>
+<body>
+	<form action="">
+		<select ng-prop="classProp">
+			<option value="ninja">Ninja</option>
+			<option value="samurai">Samurai</option>
+			<option value="brawler">Brawler</option>
+		</select>
+		<button>Fight!</button>
+		<select ng-prop="classProp">
+			<option value="ninja">Ninja</option>
+			<option value="samurai">Samurai</option>
+			<option value="brawler">Brawler</option>
+		</select>
+	</form>
+
+	<h3>Fight log</h3>
+	<ul class="logs">
+		<li ng-repeat="log in logs">
+			{{log.body}}
+		</li>
+	</ul>
+</body>
+</html>
